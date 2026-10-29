@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Sheet1Item {
+  uint32 id = 1;
+  string name = 2;
+  bool is_view = 3;
+  int64 open_time = 4;
+  float cost = 5;
+  repeated string param = 6;
+}
+
+message Sheet1Config {
+  repeated Sheet1Item items = 1;
+}
+
